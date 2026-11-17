@@ -24,4 +24,4 @@ brings that copy back.
 
 ## License
 
-Apache-2.0 (LICENSE). See NOTICE and AUTHORS.
+EPL-2.0 OR GPL-2.0-or-later (LICENSE, LICENSES/EPL-2.0.txt). See NOTICE and AUTHORS.

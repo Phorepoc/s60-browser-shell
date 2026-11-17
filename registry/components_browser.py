@@ -1,5 +1,5 @@
 # Copyright The Phorepoc Authors
-# SPDX-License-Identifier: Apache-2.0
+# SPDX-License-Identifier: EPL-2.0 OR GPL-2.0-or-later
 
 """components_browser -- the browser frontend (merged into core's registry when this repository is a layer:
 PHOREPOC_ADAPTATIONS=<board adaptations>:<path to webengine>:<path to browser>, see the pdk's tools/emitter/paths.py). Paths
@@ -19,7 +19,7 @@ import os
 from paths import OS_ROOT
 
 _SRC = os.path.join(OS_ROOT, "src", "phebrowser")
-_ICON = r"resource\apps\phebrowser_icon.mbm=" + os.path.join(_SRC, "data", "phebrowser_icon.mbm")
+_ICON = r"resource\apps\phebrowser_icon.mif=" + os.path.join(_SRC, "data", "phebrowser_icon.mif")
 
 COMPONENTS = {
     # sis: laid out RAM-loadable (the SIS installs this build). heap_max = the image's rom_heap.tsv value, which only the ROM copy
@@ -27,7 +27,7 @@ COMPONENTS = {
     "phebrowser": dict(needs="webengine", mmp=os.path.join(_SRC, "phebrowser.mmp"), sis=True, heap_max=0x10000000,
                        rom_data=[_ICON],
                        rom_stub=dict(name="Phorepoc Browser", files=[r"sys\bin\phebrowser.exe", r"resource\apps\phebrowser.rsc",
-                                                                     r"resource\apps\phebrowser_icon.mbm",
+                                                                     r"resource\apps\phebrowser_icon.mif",
                                                                      r"private\10003a3f\import\apps\phebrowser_reg.rsc"])),
     # stock loader (`device`): their framework DLLs serve the 2010 ordinals it imports; no _ZTI data imports, which stock firmware
     # does not serve. package_only: never built by --all (it would overwrite the image's phebrowser.exe); only package.yml names it.

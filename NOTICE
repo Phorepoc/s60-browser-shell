@@ -1,8 +1,10 @@
-browser: the Phorepoc browser frontend (phebrowser)
+s60-browser-shell: the Phorepoc browser frontend (phebrowser)
 Copyright The Phorepoc Authors (see AUTHORS)
 
 Phorepoc was founded by Kyriakos Bompotis.
 
-All files are licensed under the Apache License 2.0 (LICENSE, LICENSES/Apache-2.0.txt). The app is our own code. It is
-built against the Symbian platform headers and libraries of the build it is part of, and against the web-engine
-interface of the webengine repository, none of which are copied here. It contains no web engine.
+All files are licensed under the Eclipse Public License 2.0 with the GNU General Public License, version 2 or later, as a
+Secondary License (EPL-2.0 OR GPL-2.0-or-later; LICENSE, LICENSES/EPL-2.0.txt), as in Phorepoc core, where this app was
+developed until 2026-11-17. The app is our own code. It is built against the Symbian platform headers and libraries of the
+build it is part of, and against the web-engine interface of the webengine repository, none of which are copied here. It
+contains no web engine.

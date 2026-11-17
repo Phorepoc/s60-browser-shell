@@ -1,4 +1,4 @@
-# browser
+# s60-browser-shell
 
 The browser of [Phorepoc OS](https://github.com/Phorepoc): tabs with a tab grid, private tabs, light and dark themes, the
 address bar at the top or the bottom, a choice of search engine, downloads. The app (`phebrowser.exe`, "Browser" in the
@@ -6,6 +6,10 @@ launcher) is custom-drawn with the Etesian design language. It draws pages with 
 through the [webengine](https://github.com/Phorepoc/webengine) interface: install one from Catalogue,
 [WebKit](https://github.com/Phorepoc/webkit-symbian) or [NetSurf](https://github.com/Phorepoc/netsurf-symbian). No engine is
 part of this repository, its packages or any image.
+
+It is an S60 shell: built on CONE and the S60 platform APIs, so it also aims to run on older Nokia S60 devices. Other
+shells (Qt 4.8, GTK) can be written over the same [webengine](https://github.com/Phorepoc/webengine) interface and reuse
+the same engine packages.
 
 ## Two ways to get it
 

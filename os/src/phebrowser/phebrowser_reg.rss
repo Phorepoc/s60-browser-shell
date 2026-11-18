@@ -13,6 +13,10 @@ RESOURCE APP_REGISTRATION_INFO
 	app_file = "phebrowser";
 	localisable_resource_file = "\\resource\\apps\\phebrowser";
 	localisable_resource_id = R_PHEBROWSER_LOCALISABLE_APP_INFO;
+	// the menu folder: the Menu Content Service files a new application under the folder whose applicationgroup_name
+	// equals this (the default menu content names the Internet folder "internet"); without it the application lands
+	// in the default folder, Applications
+	group_name = "internet";
 	// opens web links: the Scheme Handler's http(s) plug-in sends a link to apparc's application for this type, and the
 	// Control Panel's "Default browser" (gsphbrowser) lists the applications that declare it
 	datatype_list =
